@@ -16,7 +16,7 @@ describe('AuthService', () => {
 
   it('should return true for valid credentials', () => {
     const email = "testuser@t.de";
-    const password = "password";
+    const password = "test";
     const result = service.login(email, password);
     expect(result).toBeTruthy();
   })
