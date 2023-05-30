@@ -1,0 +1,17 @@
+<div class="container">
+    <div id="left">
+        <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1685465049~exp=1685465649~hmac=f6d241708821536562a3f43f169e48833ec3a5a820d054be07be56e9931387f2" alt="">
+    </div>
+    <div id="right">
+        <form (ngSubmit)="login()">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" [(ngModel)]="email" required>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" [(ngModel)]="password" required>
+            <br>
+            <input type="submit" id="submit" value="login">
+            <div *ngIf="loginError" class="error-message">Login ungültig</div>
+        </form>
+    </div>
+</div>

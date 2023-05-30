@@ -1,0 +1,72 @@
+.error-message{
+    color: red;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#left{
+    width: 50vw;
+}
+
+#right{
+    width: 50vw;
+}
+
+#left > img{
+    max-height: 100vh;
+    max-width: 40vw;
+}
+
+#email{
+    margin-left: 40px;
+    box-shadow: 3px 3px gray;
+}
+
+#password{
+    margin-left: 17px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 3px 3px gray;
+}
+
+#submit{
+    margin-left: 80px;
+    width: 165px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 3px 3px gray;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background: skyblue;
+}
+@media (max-width: 600px) { 
+    .container{
+        flex-direction: column;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    #email{
+        margin-left: 0px;
+    }
+    
+    #password{
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    #submit{
+        margin-left: 0px;
+    }
+    
+}

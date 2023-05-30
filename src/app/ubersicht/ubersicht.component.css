@@ -1,0 +1,39 @@
+.container{
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#left{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+#right{
+    width: 50vw;
+}
+
+#left > img{
+    max-height: 30vh;
+    max-width: 40vw;
+}
+
+#submit{
+    width: 165px;
+    height: 40px;
+    background: #fff;
+    box-shadow: 3px 3px gray;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background: skyblue;
+}
+@media (max-width: 600px) { 
+    .container{
+        flex-direction: column;
+    }    
+}
